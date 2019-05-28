@@ -6,9 +6,7 @@
 #
 ##linkscan
 #bindkey "^[u" eval 'hardcopy .screen_hardcopy.txt' split 'focus down' 'screen -t links geturls.sh'
-
-#for now just finding 0x4d's we'll find a better regular expression 
-#in a minute
+#-dmh 20190528
 url_list=$(grep -o http[s?]://[A-Za-z0-9/\.%~_-]* ~/.screen_hardcopy.txt)
 
 count=0
